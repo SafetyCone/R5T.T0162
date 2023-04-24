@@ -1,6 +1,6 @@
 using System;
 
-using R5T.T0150;
+using R5T.T0178;
 
 
 namespace R5T.T0162
@@ -10,11 +10,8 @@ namespace R5T.T0162
     /// So its basically the "error" identity name.
     /// </summary>
     [StrongTypeMarker]
-    public class Error : IdentityName, IStrongTypeMarker
+    public interface IError : IStrongTypeMarker,
+        IIdentityName
     {
-        public Error(string value)
-            : base(value)
-        {
-        }
     }
 }
