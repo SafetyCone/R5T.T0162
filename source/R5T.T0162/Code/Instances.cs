@@ -5,6 +5,7 @@ namespace R5T.T0162
 {
     public static class Instances
     {
-        public static IStringOperator StringOperator => T0162.StringOperator.Instance;
+        public static Extensions.ICharacterOperator CharacterOperator_Extensions => Extensions.CharacterOperator.Instance;
+        public static Extensions.IStringOperator StringOperator_Extensions => Extensions.StringOperator.Instance;
     }
 }

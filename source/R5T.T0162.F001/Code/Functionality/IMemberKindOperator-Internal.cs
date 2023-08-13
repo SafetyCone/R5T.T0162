@@ -27,7 +27,7 @@ namespace R5T.T0162.F001.Internal
         {
             var secondCharacter = memberName.Second();
 
-            var output = Instances.TokenSeparators.MemberKindMarkerTokenSeparator_Character == secondCharacter;
+            var output = Instances.TokenSeparators.KindMarkerSeparator == secondCharacter;
             return output;
         }
 
@@ -38,7 +38,7 @@ namespace R5T.T0162.F001.Internal
         {
             var possibleMarkerKindCharacter = Instances.MemberKindOperator.Get_MarkerKind_Character(memberName);
 
-            var allMarkersHash = Instances.MemberKindMarkers.All_Characters_Hash;
+            var allMarkersHash = Instances.KindMarkerSets.All_Characters_Hash;
 
             var output = allMarkersHash.Contains(possibleMarkerKindCharacter);
             return output;

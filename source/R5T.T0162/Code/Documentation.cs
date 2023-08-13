@@ -8,5 +8,9 @@ namespace R5T.T0162
 	/// </summary>
 	public static class Documentation
 	{
-	}
+        /// <summary>
+        /// See <see href="https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/#id-strings"/>.
+        /// </summary>
+        public static readonly object See_IDStringsInMSDocs;
+    }
 }

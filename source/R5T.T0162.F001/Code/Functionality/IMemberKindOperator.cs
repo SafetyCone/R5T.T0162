@@ -22,7 +22,7 @@ namespace R5T.T0162.F001
         {
             var output = this.Is_MemberKindMarked(
                 memberName,
-                Instances.MemberKindMarkers.MethodKindMarker_Character);
+                Instances.KindMarkers.Method.Value);
 
             return output;
         }
@@ -78,7 +78,7 @@ namespace R5T.T0162.F001
         {
             var output = this.Is_MemberKindMarked(
                 memberName,
-                Instances.MemberKindMarkers.TypeKindMarker_Character);
+                Instances.KindMarkers.Type.Value);
 
             return output;
         }

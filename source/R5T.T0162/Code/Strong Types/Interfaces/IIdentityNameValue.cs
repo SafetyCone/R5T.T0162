@@ -7,10 +7,10 @@ using R5T.T0179;
 namespace R5T.T0162
 {
     /// <summary>
-    /// https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/xmldoc/#id-strings
+    /// Strongly-types a string as the value of an identity name.
     /// </summary>
     [StrongTypeMarker]
-    public interface IIdentityName : IStrongTypeMarker,
+    public interface IIdentityNameValue : IStrongTypeMarker,
         ITyped<string>
     {
     }
