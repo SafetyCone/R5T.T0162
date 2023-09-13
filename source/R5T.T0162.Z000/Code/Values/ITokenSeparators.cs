@@ -9,6 +9,32 @@ namespace R5T.T0162.Z000
     public partial interface ITokenSeparators : IValuesMarker
     {
         /// <summary>
+        /// <para>',' (comma)</para>
+        /// </summary>
+        public const char ArgumentListSeparator_Constant = ',';
+
+        /// <inheritdoc cref="ArgumentListSeparator_Constant"/>
+        public char ArgumentListSeparator => ArgumentListSeparator_Constant;
+
+        /// <summary>
+        /// <para>'@' (at-sign, a.k.a. alphasands)</para>
+        /// </summary>
+        public const char ByReferenceMarker_Constant = '@';
+
+        /// <inheritdoc cref="ByReferenceMarker_Constant"/>
+        public char ByReferenceMarker => ByReferenceMarker_Constant;
+
+        /// <summary>
+        /// <para>'#' (hash)</para>
+        /// Separates the namespaced type name parts of an explicitly implemented name.
+        /// </summary>
+        public const char ExplicitImplementationNamespaceTokenSeparator_Constant = '#';
+
+        /// <inheritdoc cref="ExplicitImplementationNamespaceTokenSeparator_Constant"/>
+        public char ExplicitImplementationNamespaceTokenSeparator => ExplicitImplementationNamespaceTokenSeparator_Constant;
+
+
+        /// <summary>
         /// <para>':' (colon)</para>
         /// Separates the first character (which is the kind marker_ from the rest of the identity name (which is the identity name value).
         /// </summary>
@@ -17,13 +43,6 @@ namespace R5T.T0162.Z000
         /// <inheritdoc cref="KindMarkerSeparator_Constant"/>
         public char KindMarkerSeparator => KindMarkerSeparator_Constant;
 
-        /// <summary>
-        /// <para>',' (comma)</para>
-        /// </summary>
-        public const char ArgumentListSeparator_Constant = ',';
-
-        /// <inheritdoc cref="ArgumentListSeparator_Constant"/>
-        public char ArgumentListSeparator => ArgumentListSeparator_Constant;
 
         /// <summary>
         /// <para>'{' (open-brace)</para>
