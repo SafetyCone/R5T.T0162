@@ -142,7 +142,7 @@ namespace R5T.T0162.F001
                 IKindMarkers.Namespace_Constant => identityName.ToNamespaceIdentityName(),
                 IKindMarkers.Property_Constant => identityName.ToPropertyIdentityName(),
                 IKindMarkers.Type_Constant => identityName.ToTypeIdentityName(),
-                _ => throw Instances.SwitchOperator.GetUnrecognizedSwitchValueException(kindMarker.ToString(), "Kind Marker")
+                _ => throw Instances.SwitchOperator.Get_UnrecognizedSwitchValueException(kindMarker.ToString(), "Kind Marker")
             };
 
             return output;
